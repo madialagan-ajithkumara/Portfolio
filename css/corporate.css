@@ -6186,3 +6186,22 @@ ul.blog-pagenation {
 
 
 }
+
+/* Center iframe and make responsive */
+.iframe-wrapper {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px; /* optional for rounded edges */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* optional */
+    margin: 20px auto;
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
