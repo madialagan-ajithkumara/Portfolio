@@ -46,6 +46,12 @@
     <!-- Style Customizer's stylesheets END -->
 
     <!-- Skin stylesheet -->
+        <style>
+            /* Make lottie-player scale responsively to its container */
+            .lottie-wrapper { max-width: 800px; margin: 0 auto; }
+            .lottie-wrapper lottie-player, lottie-player.lottie-responsive { width: 100% !important; height: auto !important; display: block; }
+            @media (max-width: 767px) { .lottie-wrapper { max-width: 100%; } }
+        </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162535367-1"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -323,9 +329,9 @@
                         <!--end item-->
                     </div>
                     <!--end item-->
-                    <lottie-player class="col-md-5 animate-in" data-anim-type="fade-in-left" data-anim-delay="100"
-                        src="https://assets5.lottiefiles.com/packages/lf20_w51pcehl.json" background="transparent"
-                        speed="1" style="width: 800px; height: 720px;" hover loop></lottie-player>
+                    <div class="col-xs-12 col-sm-12 col-md-5 animate-in lottie-wrapper" data-anim-type="fade-in-left" data-anim-delay="100">
+                        <lottie-player class="lottie-responsive" src="https://assets5.lottiefiles.com/packages/lf20_w51pcehl.json" background="transparent" speed="1" hover loop></lottie-player>
+                    </div>
                 </div>
                 <!--end item-->
             </section>
