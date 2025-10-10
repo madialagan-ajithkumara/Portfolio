@@ -52,17 +52,20 @@
             .lottie-wrapper lottie-player, lottie-player.lottie-responsive { width: 100% !important; height: auto !important; display: block; }
             @media (max-width: 767px) { .lottie-wrapper { max-width: 100%; } }
         </style>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162535367-1"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics (GA4 + Universal Analytics) -->
+    <!-- Load gtag.js once (use GA4 measurement ID in the src) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-26XKFT8L73"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
+        // Configure both GA4 and the existing Universal Analytics (UA) property
+        gtag('config', 'G-26XKFT8L73');
         gtag('config', 'UA-162535367-1');
     </script>
-    <!--Google Analytics -->
+    <!-- Google Analytics -->
 
 </head>
 
